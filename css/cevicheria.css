@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2E2E2E;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #C3B18A;
+    z-index: 1000;
+    
+}
+
+
+
+.conteiner-desplegable{
+    background-color: #C3B18A;
+}
+
+/* Desplegable checkbox con label img*/
+#desplegable{
+    display: none;
+}
+
+.conteiner-desplegable label{
+    
+    display: none;
+    
+}
+
+.conteiner-desplegable label img{
+    margin: 10px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.conteiner-desplegable label img:hover{
+  border: 1px solid white;
+  background-color: rgb(212, 208, 208);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Menu */
+.conteiner-menu ul{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+  list-style: none;
+  justify-content: center;
+ 
+}
+
+.conteiner-menu ul li{
+    
+    margin: 0 -10px 0 -10px;
+    padding: 10px ;
+    text-align: center;
+    width: 150px;
+    z-index: 10;
+}
+
+
+.conteiner-menu ul a{
+    font-weight: bold; 
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-family: monospace;
+}
+
+.conteiner-menu ul a:hover{
+    color: white;
+}
+
+.conteiner-slider{
+    background-color: #2E2E2E;
+}
+
+/* Contenedor imagen 1 */
+.imagen-1{
+    margin:59px auto 0 auto;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.imagen-1 img{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: block;
+    z-index: 0;
+}
+
+
+
+.imagen-1 h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute; /* Posiciona el botón sobre la imagen */
+              bottom: 260px; /* Ajusta la posición desde el fondo */
+              left: 50%; /* Centra horizontalmente */
+              transform: translateX(-50%); /* Corrige el centrado del botón */
+              padding: 10px 20px; /* Espaciado del botón */
+              color: rgb(255, 255, 255); /* Color del texto */
+              cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+              border-radius: 5px; /* Bordes redondeados */
+              transition: background-color 0.3s; /* Transición suave */
+              font-size: 110px;
+}
+
+.imagen-1 h4{
+    position: absolute; /* Posiciona el botón sobre la imagen */
+    bottom: 255px; /* Ajusta la posición desde el fondo */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Corrige el centrado del botón */
+    padding: 10px 20px; /* Espaciado del botón */
+    border: none; /* Sin borde */
+    color: rgb(255, 255, 255); /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+    font-size: 40px;
+    font-family: monospace;
+}
+
+/* boton menu */
+#boton-aqui{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    z-index: 10;
+              bottom: 240px;
+              left: 50%; /* Centra horizontalmente */
+              transform: translateX(-50%); /* Corrige el centrado del botón */
+              padding: 10px 5px; 
+              width: 170px;
+              background-color: #C3B18A; 
+              text-decoration: none;
+              color: white; 
+              cursor: pointer; 
+              border-radius: 5px; 
+              transition:1s; 
+}
+
+#boton-aqui:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #C3B18A;
+}
+
+/* Contenedor de introduccion  */
+
+.conteiner-introduction{
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    color: #C3B18A;
+    background-color: #2E2E2E;
+}
+.conteiner-introduction img{
+    width: 320px;
+ border-radius: 5px;
+}
+
+.conteiner-introduction .text{
+    margin: 10px;
+    padding: 10px;
+}
+
+.conteiner-introduction p{
+    max-width: 340px;
+    text-align: justify;
+}
+
+
+
+
+
+
+/* Contenedor de la ubicación */
+.conteiner-map{
+    background-color: #2E2E2E;
+    padding: 0px 0 20px 0;
+    color: #C3B18A;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin: -50px auto 7vw auto; /*  el div esté centrado en su contenedor */
+    
+    
+}
+
+.conteiner-map iframe{
+    width: 70vw;
+    
+}
+
+
+footer{
+    text-align: center;
+    padding: auto 10px;
+    font-size: 10px;
+    width: 100%;
+flex-direction: column;
+    color: white;
+    background-color:#2E2E2E;
+    
+}
+
+.conteiner-video{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.conteiner-video iframe{
+    text-align: center;
+    
+}
